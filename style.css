@@ -1,0 +1,115 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.acceuil {
+  height: 100%;
+  width: 100%;
+  background: url(paper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  position: initial;
+}
+
+.base {
+  height: 100%;
+  width: 100%;
+  background: url(cropped.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  position: initial;
+}
+
+img {
+  height: 300px;
+}
+
+button {
+  background-color: black;
+  border-radius: 25%;
+  border-color: red;
+}
+
+.cookier {
+  height: 200px;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 150px;
+}
+
+.hot {
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  letter-spacing: 1px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(150deg, #ff0000, #ff6800, #eede13, #57ff00);
+  justify-content: center;
+  position: initial;
+}
+
+/* Effet au clic */
+
+.clickAnim {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background: linear-gradient(to top, #ff0000, #ff8300);
+  position: absolute;
+  z-index: 9000;
+  transform: scale(0);
+  transform-origin: center;
+  animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
